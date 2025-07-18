@@ -10,7 +10,9 @@
     "codeceptjs:demo:headless": "HEADLESS=true codeceptjs run --steps -c node_modules/@codeceptjs/examples/codecept.webdriver.conf.js",
     "codeceptjs:demo:ui": "codecept-ui --app  -c node_modules/@codeceptjs/examples/codecept.webdriver.conf.js",
     "test": "npx codeceptjs run",
-    "allure": "npx allure generate ./output/"
+    "allure:generate": "npx allure generate ./output/test-reports",
+    "allure:open": "npx allure open ./output/test-reports",
+    "allure:serve": "npx allure serve ./output/test-reports"
   },
   "devDependencies": {
     "@codeceptjs/allure-legacy": "^1.0.2",

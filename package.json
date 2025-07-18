@@ -9,12 +9,14 @@
     "codeceptjs:demo": "codeceptjs run --steps -c node_modules/@codeceptjs/examples/codecept.webdriver.conf.js",
     "codeceptjs:demo:headless": "HEADLESS=true codeceptjs run --steps -c node_modules/@codeceptjs/examples/codecept.webdriver.conf.js",
     "codeceptjs:demo:ui": "codecept-ui --app  -c node_modules/@codeceptjs/examples/codecept.webdriver.conf.js",
-    "test": "npx codeceptjs run"
+    "test": "npx codeceptjs run",
+    "allure": "npx allure generate ./output/"
   },
   "devDependencies": {
     "@codeceptjs/allure-legacy": "^1.0.2",
     "allure-codeceptjs": "^3.3.2",
-    "codeceptjs": "^3.7.3"
+    "codeceptjs": "^3.7.3",
+    "playwright": "1.54.0"
   },
   "description": "Demo test",
   "main": "index.js",

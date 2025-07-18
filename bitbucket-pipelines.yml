@@ -8,14 +8,14 @@ image: mcr.microsoft.com/playwright:v1.54.0-noble
 pipelines:
   default:
         - step:
-            name: Code linting
+          name: Run test
           script:
             - export JAVA_HOME=/usr/lib/jvm/java-1.11.0-openjdk-amd64 && export PATH=$PATH:$JAVA_HOME/bin
             - export HEADLESS=true
             - mkdir -p /usr/share/man/man1 && apt-get -qq update && apt-get -qq install openjdk-11-jre-headless procps
             - npm install && npx playwright install
-            - npx codeceptjs run
+            - npx codeceptjs run --steps
           after-script:
-            - allure serve allure-results
+            - npm run allure:generate
           artifacts:
             - allure-report/**

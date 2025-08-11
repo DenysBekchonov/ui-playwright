@@ -16,27 +16,27 @@
   },
   "devDependencies": {
     "@codeceptjs/allure-legacy": "^1.0.2",
-    "allure-codeceptjs": "^3.3.2",
+    "allure-codeceptjs": "^3.3.3",
     "codeceptjs": "^3.7.3",
     "mocha-multi": "^1.1.7",
-    "playwright": "1.54.0"
+    "playwright": "1.54.2"
   },
   "description": "Demo test",
   "main": "index.js",
   "dependencies": {
-    "@codeceptjs/configure": "^0.10.0",
-    "@codeceptjs/examples": "^1.2.1",
-    "@codeceptjs/ui": "^0.7.0",
-    "@faker-js/faker": "^8.2.0",
-    "@playwright/test": "^1.39.0",
-    "@types/node": "^20.8.9",
+    "@codeceptjs/configure": "^1.0.6",
+    "@codeceptjs/examples": "^1.2.4",
+    "@codeceptjs/ui": "^1.2.5",
+    "@faker-js/faker": "^9.9.0",
+    "@playwright/test": "^1.54.2",
+    "@types/node": "^24.2.1",
     "allure-commandline": "^2.34.1",
-    "allure-playwright": "^2.9.2",
+    "allure-playwright": "^3.3.3",
     "cross-fetch": "^4.1.0",
     "mocha-junit-reporter": "^2.2.1",
-    "ts-node": "^10.9.1",
-    "typescript": "^5.2.2",
-    "webdriverio": "^6.12.1"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2",
+    "webdriverio": "^9.19.0"
   },
   "author": "DBekchonov",
   "license": "MIT"

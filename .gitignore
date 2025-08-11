@@ -6,6 +6,8 @@
 # Node artifact files
 node_modules/
 dist/
+allure-result/
+allure-results/
 
 # Compiled Java class files
 *.class

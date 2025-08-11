@@ -50,11 +50,29 @@ export const config: CodeceptJS.MainConfig = {
     userProfilePagePage: "./pages/userProfilePage.ts",
   },
   name: 'magento.softwaretestingboard',
+    mocha: {
+    reporterOptions: {
+      "codeceptjs-cli-reporter": {
+        "stdout": "-",
+        "options": {
+          "verbose": true,
+          "steps": true,
+        }
+      },
+      "mocha-junit-reporter": {
+        "stdout": "-",
+        "options": {
+          "mochaFile": "./test-reports/result.xml",
+          "attachments": true //add screenshot for a failed test
+        }
+      }
+    }
+  },
   plugins: {
     allure: {
       enabled: true,
-      require: 'allure-codeceptjs',
-      outputDir: './output/test-reports/'
+      require: "allure-codeceptjs",
+      outputDir: './test-reports/allure',
     },
     retryFailedStep: {
       enabled: true

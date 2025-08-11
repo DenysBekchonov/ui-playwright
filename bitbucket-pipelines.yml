@@ -3,21 +3,23 @@
 #  This template allows you to validate your NodeJS code.
 #  The workflow allows running tests and code linting on the default branch.
 
-image: mcr.microsoft.com/playwright:v1.54.0-noble
+image: mcr.microsoft.com/playwright:v1.43.1-jammy
 
 pipelines:
   default:
-        - step:
-            name: Run test
-            script:
-              - export JAVA_HOME=/usr/lib/jvm/java-1.11.0-openjdk-amd64 && export PATH=$PATH:$JAVA_HOME/bin
-              - export HEADLESS=true
-              - mkdir -p /usr/share/man/man1 && apt-get -qq update && apt-get -qq install openjdk-11-jre-headless procps
-              - npm install && npx playwright install
-              - npx codeceptjs run --steps
-            caches:
-              - node
-            after-script:
-              - npm run allure:generate
-            artifacts:
-              - allure-report/**
+      - step:
+          name: Run Tests
+          caches:
+            - node
+          script:
+            - export HEADLESS=true
+            - mkdir -p /usr/share/man/man1 && apt-get -qq update && apt-get -qq install openjdk-11-jre-headless procps
+            - export JAVA_HOME=/usr/lib/jvm/java-1.11.0-openjdk-amd64 && export PATH=$PATH:$JAVA_HOME/bin
+            - npm install && npx playwright install
+            - npx codeceptjs run --reporter=mocha-multi
+          after-script:
+            - allure serve allure-results
+          artifacts:
+            - allure-reports/**
+            - test-reports/**
+            - test-reports/result.xml

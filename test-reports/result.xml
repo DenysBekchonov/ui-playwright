@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="72.046" tests="3" failures="0">
-  <testsuite name="Root Suite" timestamp="2025-08-11T19:07:56" tests="0" time="0.000" failures="0">
+<testsuites name="Mocha Tests" time="72.864" tests="3" failures="0">
+  <testsuite name="Root Suite" timestamp="2025-08-11T20:26:07" tests="0" time="0.000" failures="0">
   </testsuite>
-  <testsuite name="Sign in" timestamp="2025-08-11T19:07:56" tests="2" file="E:\IT\Git\Repos\ui\scenarios\Sign_in_test.ts" time="23.075" failures="0">
-    <testcase name="Sign in: Crean an account @registration @sign_in" time="11.240" classname="Crean an account @registration @sign_in">
+  <testsuite name="Sign in" timestamp="2025-08-11T20:26:07" tests="2" file="E:\IT\Git\Repos\ui\scenarios\Sign_in_test.ts" time="25.195" failures="0">
+    <testcase name="Sign in: Crean an account @registration @sign_in" time="13.594" classname="Crean an account @registration @sign_in">
     </testcase>
-    <testcase name="Sign in: User logins to the system @login @sign_in @1" time="7.729" classname="User logins to the system @login @sign_in @1">
+    <testcase name="Sign in: User logins to the system @login @sign_in @1" time="7.513" classname="User logins to the system @login @sign_in @1">
     </testcase>
   </testsuite>
-  <testsuite name="But product" timestamp="2025-08-11T19:08:19" tests="1" file="E:\IT\Git\Repos\ui\scenarios\Buy_product_test.ts" time="48.969" failures="0">
-    <testcase name="But product: User buys product @buy @1" time="46.876" classname="User buys product @buy @1">
+  <testsuite name="But product" timestamp="2025-08-11T20:26:32" tests="1" file="E:\IT\Git\Repos\ui\scenarios\Buy_product_test.ts" time="47.667" failures="0">
+    <testcase name="But product: User buys product @buy @1" time="45.740" classname="User buys product @buy @1">
     </testcase>
   </testsuite>
 </testsuites>

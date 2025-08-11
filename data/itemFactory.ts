@@ -38,6 +38,6 @@ export default class Data {
         this.cityNameShipping = faker.location.city();
         this.regionNumberShipping = faker.string.numeric({ length: 1, exclude: ['0'] });
         this.zipCodeShipping = faker.location.zipCode('#####');
-        this.phoneNumber = faker.phone.number('+191########');
+        this.phoneNumber = faker.phone.number({ style: 'international' });
     }
 }

@@ -24,8 +24,6 @@
   "description": "Demo test",
   "main": "index.js",
   "dependencies": {
-    "@cliqz/adblocker-playwright": "^1.34.0",
-    "@cliqz/adblocker-puppeteer": "^1.34.0",
     "@codeceptjs/configure": "^0.10.0",
     "@codeceptjs/examples": "^1.2.1",
     "@codeceptjs/ui": "^0.7.0",
